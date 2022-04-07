@@ -1,7 +1,9 @@
-import { Container } from './styles';
+import Header from '../../components/Header';
 
 const HomePage = () => {
-  return <Container>HomePage</Container>;
+  return (
+    <Header />
+  );
 };
 
 export default HomePage;
