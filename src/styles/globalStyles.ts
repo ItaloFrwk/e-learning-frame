@@ -36,6 +36,7 @@ const GlobalStyle = createGlobalStyle`
     text-decoration: none;
     color: inherit;
   }
+
   blockquote, q {
     quotes: none;
   }

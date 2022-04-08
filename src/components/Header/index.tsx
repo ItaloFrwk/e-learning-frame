@@ -1,13 +1,18 @@
 import { Menu } from 'antd';
+import { MdSearch } from "react-icons/md";
 
+
+import { Link } from 'react-router-dom';
 import {
   Container,
   Left,
   Right,
   Image,
   DropdownComponent,
-  Input,
+  InputComponent,
   ButtonComponent } from './styles';
+
+
 
 import logo from '../../assets/img/logoframe.png';
 
@@ -101,11 +106,13 @@ const Header = () => {
         <DropdownComponent overlay={menu} placement="bottomLeft">
          <span>Categorias</span>
         </DropdownComponent>
-        <Input placeholder='Pesquisar curso...' />
+        <InputComponent prefix={<MdSearch />} placeholder='Pesquisar curso...' />
       </Left>
 
       <Right>
-        <ButtonComponent type='primary'>Fazer login</ButtonComponent>
+        <ButtonComponent type='primary'>
+          <Link to="/login">Fazer Login</Link>
+        </ButtonComponent>
       </Right>
     </Container>
   );

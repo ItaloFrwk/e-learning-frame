@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Dropdown, Button } from 'antd';
+import { Dropdown, Button, Input } from 'antd';
 
 
 export const Container = styled.header`
@@ -25,18 +25,37 @@ export const DropdownComponent = styled(Dropdown)`
    cursor: pointer;
 `;
 
-export const Input = styled.input`
+export const InputComponent = styled(Input)`
   width: 300px;
   margin-left: 30px;
-  border: 1px solid black;
-  border-radius: 12px;
-  padding: 3px 10px;
+  border: 1px solid #fefefe;
+  border-radius: 8px;
+  padding: 3px 12px;
   background: #eee;
+  transition: none;
 
-  &::selection {
-    color: #000;
-    background: #000;
+  &:hover {
+    border-color: transparent !important;
   }
+
+  &::placeholder {
+    color: rgba(0,0,0, 0.5);
+  }
+
+  &:focus {
+    box-shadow: none !important;
+    border: 1px solid #000 !important;
+    outline: none !important;
+  }
+
+  input {
+    background: #eee;
+    
+    &::selection {
+      background: #7900DF;
+    }
+  }
+
 `;
 
 export const Right = styled.div``;
@@ -52,4 +71,9 @@ export const ButtonComponent = styled(Button)`
     background: #000;
     color: #fff;
   }
+
+  &:focus {
+    background: #000;
+  }
 `;
+

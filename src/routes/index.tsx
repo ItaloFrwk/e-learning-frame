@@ -8,7 +8,8 @@ const HomePage = lazy(() => import('../pages/HomePage'));
 const Router = (logged: boolean, token: string): RouteObject[] => [
   {
     path: '/',
-    element: logged || token ? <HomePage /> : <Navigate to="login" />,
+    // element: logged || token ? <HomePage /> : <Navigate to="login" />,
+    element: <HomePage />,
     children: [],
   },
   { path: 'login', element: <Login /> },
