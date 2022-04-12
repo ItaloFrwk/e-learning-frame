@@ -106,7 +106,7 @@ const Header = () => {
         <DropdownComponent overlay={menu} placement="bottomLeft">
          <span>Categorias</span>
         </DropdownComponent>
-        <InputComponent prefix={<MdSearch />} placeholder='Pesquisar curso...' />
+        <InputComponent prefix={<MdSearch />} placeholder="Pesquisar um curso..."/>
       </Left>
 
       <Right>

@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { Dropdown, Button, Input } from 'antd';
 
 
+
 export const Container = styled.header`
   width: 100%;
   display: flex;
@@ -25,37 +26,29 @@ export const DropdownComponent = styled(Dropdown)`
    cursor: pointer;
 `;
 
+
+
 export const InputComponent = styled(Input)`
   width: 300px;
   margin-left: 30px;
-  border: 1px solid #fefefe;
-  border-radius: 8px;
-  padding: 3px 12px;
-  background: #eee;
+  border-radius: 12px;
   transition: none;
 
   &:hover {
-    border-color: transparent !important;
+    border: 1px solid #d9d9d9 !important;
   }
 
-  &::placeholder {
-    color: rgba(0,0,0, 0.5);
+  .ant-input-affix-wrapper-focused {
+    box-shadow: none !important;
+    border-color: #d9d9d9 !important;
   }
 
   &:focus {
+    border: 1px solid #d9d9d9 !important;
     box-shadow: none !important;
-    border: 1px solid #000 !important;
     outline: none !important;
+    z-index: 0;
   }
-
-  input {
-    background: #eee;
-    
-    &::selection {
-      background: #7900DF;
-    }
-  }
-
 `;
 
 export const Right = styled.div``;

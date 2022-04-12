@@ -28,6 +28,8 @@
   },
   "dependencies": {
     "@craco/craco": "^6.4.3",
+    "@radix-ui/react-label": "^0.1.5",
+    "@radix-ui/react-popover": "0.1.6",
     "@types/js-cookie": "^3.0.1",
     "@types/node": "^12.20.36",
     "@types/prop-types": "^15.7.4",
