@@ -44,6 +44,11 @@ const GlobalStyle = createGlobalStyle`
   q:before, q:after {
     content: none;
   }
+
+  .ant-input-affix-wrapper-focused {
+    box-shadow: none !important;
+    border-color: #d9d9d9 !important;
+  }
 `;
 
 export default GlobalStyle;

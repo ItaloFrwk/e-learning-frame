@@ -38,11 +38,6 @@ export const InputComponent = styled(Input)`
     border: 1px solid #d9d9d9 !important;
   }
 
-  .ant-input-affix-wrapper-focused {
-    box-shadow: none !important;
-    border-color: #d9d9d9 !important;
-  }
-
   &:focus {
     border: 1px solid #d9d9d9 !important;
     box-shadow: none !important;
