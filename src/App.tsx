@@ -14,8 +14,6 @@ import { getCategories } from './api/service/requests/models/Categories/getCateg
 
 const App = () => {
 
-  useEffect(() => {
-    (async () => {
     //   console.log(await getVideos({
     //     paramsQuery: {
     //       id: true,
@@ -74,9 +72,6 @@ const App = () => {
     //         id: true
     //     }
     // }));
-
-    })();
-  }, []);
 
   return (
     <AuthProvider>
