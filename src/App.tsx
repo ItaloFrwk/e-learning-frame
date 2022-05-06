@@ -16,16 +16,16 @@ const App = () => {
 
   useEffect(() => {
     (async () => {
-    //   console.log(await getVideos({
-    //     paramsQuery: {
-    //       id: true,
-    //       title: true,
-    //       description: true,
-    //     },
-    //     whereConditions: {
+      console.log(await getVideos({
+        paramsQuery: {
+          id: true,
+          title: true,
+          description: true,
+        },
+        whereConditions: {
 
-    //     }
-    //   }));
+        }
+      }));
 
     //   console.log(await updateVideo({
     //     data: {
@@ -69,11 +69,11 @@ const App = () => {
     // t.append("fileUpload", 'new File');
     // console.log(await uploadAsset(t));
 
-    // console.log(await getCategories({
-    //     paramsQuery: {
-    //         id: true
-    //     }
-    // }));
+    console.log(await getCategories({
+        paramsQuery: {
+            id: true
+        }
+    }));
 
     })();
   }, []);
